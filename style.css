@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-primary: #065E7C;
+    --title-primary: #202024;
+    --text-primary: #121214;
+
+    --text-base: 1rem;
+    --text-sm: 0.875rem;
+}
+
+html {
+    font: 400 var(--text-base)/160% "Mulish", sans-serif;
+    color: var(--text-primary);
+}
+
+h1,
+h2,
+h3 {
+    font-size: 1.5rem;
+    color: var(--title-primary);
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
