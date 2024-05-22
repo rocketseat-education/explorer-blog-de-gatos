@@ -6,7 +6,7 @@
 }
 
 :root {
-    --brand-primary: #065E7C;
+    --brand-primary: #387E96;
     --title-primary: #202024;
     --text-primary: #121214;
 
@@ -29,6 +29,7 @@ h3 {
 
 h3 {
     font-size: 1.125rem;
+    line-height: 100%;
 }
 
 img {
@@ -38,6 +39,12 @@ img {
 
 .text-sm {
     font-size: var(--text-sm);
+}
+
+.container {
+    padding-inline: 1.25rem;
+    max-width: calc(24rem + (1.25rem * 2));
+    margin-inline: auto;
 }
 
 header {
@@ -82,12 +89,6 @@ header form input::placeholder {
 }
 
 /* main */
-main {
-    padding-inline: 1.25rem;
-    max-width: 23.875rem;
-    margin-inline: auto;
-}
-
 main h1 {
     margin-top: 1rem;
 }
@@ -107,4 +108,39 @@ button {
 
 button:hover {
     transform: scale(1.1) rotate(10deg);
+}
+
+/* aside */
+aside {
+    margin-top: 2rem;
+}
+
+aside section {
+    margin-top: 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+section article {
+    display: grid;
+
+    grid-template-columns: 9.375rem 1fr;
+    gap: 1rem;
+}
+
+section article p {
+    margin-top: 0.75rem;
+}
+
+article img {
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--brand-primary);
+    color: white;
+    text-align: center;
+    padding-block: 1.5rem;
+
+    margin-top: 2.5rem;
 }
